@@ -17,28 +17,18 @@ def main():
     print(comp(arr1, arr2))
 
 # my solution
-def comp(array1, array2):     
-    # check for false where items in a, b contain None
-    if not (array1 is not None and array2 is not None) or None in array1 or None in array2: 
+# refactor 
+# - using list comprehension and sorted i/o map() and sort() 
+#   to shorten the code and no need to define variable that will not be used again int he code.
+# - using of Try and Except, this will capture 
+#      a) TypeError: None Type Object Is Not Iterable (ie. array1 = None)
+#      b) TypeError: unsupported operand type(s) for **: 'int' and None
+
+def comp(array1, array2):   
+    try:
+        return sorted([num ** 2 for num in array1]) == sorted(array2)
+    except:
         return False
-    
-    # check for false if two arrays does not have the same size.
-    if len(array1) != len(array2):
-        return False
-    else:
-        # check multiplicities
-        array1_pow2 = list(map(lambda num: num ** 2, array1))
-        array1_pow2.sort()
-        array2.sort()
-        for i in range(len(array1)):
-            if array1_pow2[i] == array2[i]:
-                continue
-            else:
-                return False
-    return True
 
 if __name__ == "__main__":
-    main()  
-
-
-
+    main() 
