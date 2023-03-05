@@ -1,4 +1,6 @@
 '''
+Day 0: 04-Mar-2023
+
 https://www.codewars.com/kata/54da5a58ea159efa38000836/train/python
 
 Instructions:
@@ -14,8 +16,11 @@ Examples
 [1,2,2,3,3,3,4,3,3,3,2,2,1] should return 4, because it appears 1 time (which is odd).
 '''
 
+import random
+
 def main():
-    print(find_it([1,2,2,3,3,3,4,3,3,3,2,2,1]))
+    seq = random.choice([[7],[0,1,0,1,0], [1,2,2,3,3,3,4,3,3,3,2,2,1]])
+    print(f"input sequence: {seq}\nanswer:{find_it(seq)}")
 
 # my solution
 def find_it(seq):
