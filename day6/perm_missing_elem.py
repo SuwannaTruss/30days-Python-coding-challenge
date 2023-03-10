@@ -12,7 +12,6 @@ Gauss (Sum of sequence): https://dev.to/alisabaj/the-gauss-sum-and-solving-for-t
 sum() in python: https://www.geeksforgeeks.org/sum-function-python/
 '''
 
-import math
 import random
 
 def main():
@@ -28,7 +27,7 @@ def main():
 def solution(A):
     print(f'test_array: {A}')
     # find sum of sequence [1...(N)] using Gauss method
-    guass_sum = int(math.floor(((len(A)+1) * (len(A)+2))/2))
+    guass_sum = ((len(A)+1) * (len(A)+2))//2
     A_sum = sum(A)
     return abs(A_sum - guass_sum)
 
