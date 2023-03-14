@@ -28,11 +28,11 @@
 - A choice of coding challenge and level are entirely yours. ie. [codewars](https://www.codewars.com/collections/python-practice-1), [HackerRank](https://www.hackerrank.com/domains/python)
 
 ## Why should we do it?
-- User authentication
-- Tracking medication taking calendar
-- Reminder message
-- Access to Medical test results (organise in categories)
-- Show user statistics about their personal health data + visualisations.
+- Participating in a coding challenge can enhance your coding skills.
+- Consistency is the key to success, and a coding challenge can help build that consistency.
+- Joining a coding challenge can help you connect with like-minded individuals.
+- A coding challenge can provide the motivation you need to stay focused and productive.
+- Completing a coding challenge can showcase your skills to potential employers.
 
 ## Accepting a Challenge
 You can start your 30 days streak journey by 
